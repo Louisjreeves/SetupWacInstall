@@ -8,7 +8,6 @@ Automation tool for Windows Admin center and Open Manage Integration for Windows
 This tool has 7 different options
 
 ## SetupWacInstall Pic Example
-![image](https://user-images.githubusercontent.com/79279019/165133674-ce2e2e2f-25d8-491f-82ec-c9e91f065c3f.png)
 ![Image](https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/SetupWacInstall.jpg)
 
  
