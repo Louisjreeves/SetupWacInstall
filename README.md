@@ -9,6 +9,7 @@ This tool has 7 different options
 
 ## SetupWacInstall Pic Example
 ![image](https://user-images.githubusercontent.com/79279019/165133674-ce2e2e2f-25d8-491f-82ec-c9e91f065c3f.png)
+![Image](https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/SetupWacInstall.jpg)
 
  
 This tool uses all different sections. Start with Step one and work your way down from one to 7. The order attempts to: 
