@@ -8,11 +8,17 @@ Automation tool for Windows Admin center and Open Manage Integration for Windows
 This tool has 7 different options
 
 ## SetupWacInstall Pic Example
-![wacPic](https://github.com/Louisjreeves/SetupWacInstall/blob/af5b42453fe3523cca471bb665ba886b4782249f/SetupWacInstall.jpg)
 ![image](https://user-images.githubusercontent.com/79279019/165133674-ce2e2e2f-25d8-491f-82ec-c9e91f065c3f.png)
 
  
-This tool uses all different sections. Start with Step one and work your way down from one to 7. 
+This tool uses all different sections. Start with Step one and work your way down from one to 7. The order attempts to: 
+1. Clean Up old install 
+2. cleanup old USB NIC
+3. Install Idrac tools and ISM module
+4. Test Nodes for connectivity and give a good test for success
+5. Install Wac in Gateway Mode
+6. Test Redfish from a target node to idrac
+7. Remove CAU if needed and try to reinstall with the same objects
   
    
 
