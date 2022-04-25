@@ -5,20 +5,20 @@ Helps clean Up WAC and OMIMSWAC for Cluster Management and Patch to succeed
 
 Automation tool for Windows Admin center and Open Manage Integration for Windows Admin Center.
 
-This tool has 7 different options 
+This tool has 7 different options
 
-## ProSupportNTWKtest
-![NTWKPic](https://user-images.githubusercontent.com/79279019/138011794-f2ad773f-b458-4f36-af78-2a89e3533f22.png)
+## SetupWacInstall Pic Example
+![NTWKPic](https://github.com/Louisjreeves/SetupWacInstall/blob/af5b42453fe3523cca471bb665ba886b4782249f/SetupWacInstall.jpg![image](https://user-images.githubusercontent.com/79279019/165133674-ce2e2e2f-25d8-491f-82ec-c9e91f065c3f.png)
+
  
-This tool uses all the files to run a few different types of network pings, latency or bandwidth tests with Test-Netconnection, PSPING and IPV4 Network scan - See: https://github.com/BornToBeRoot
+This tool uses all different sections. Start with Step one and work your way down from one to 7. 
   
    
 
     
    How To Use: 
- Use the URL Below. Put into a powershell window and the files will download into the Downloads Folder. They will unzip and ProSupportNTWKTest will begin. You will 
- see the menu in the above screen shot. You may Test Ports and IP with Menu item 1. You may perform tests with Menu Item 2 and Menu Item 3 is to query a subnet for 
- Mac Addresses in a subnet. This will verify if a Vlan is working and keeping only macs in one segment, showing up in the returned list. :
+ Use the URL Below. Put into a powershell window and the files will download into the Downloads Folder. They will unzip and SetupWacInstall will begin. You will 
+ see the menu in the above screen shot. You may Test and go over the WAC install. You may perform tests with Menu Item 1-7. :
 ```Powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="TestHVAAllocation";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/ProSupportNTWKtest/main/ExpandAnd Run.ps1')); Invoke-ProSupportNTWKTtest
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="SetupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/ProSupportNTWKtest/main/ExpandAndSetupCORP.ps1')); Invoke-SetupWacInstall
 ``
