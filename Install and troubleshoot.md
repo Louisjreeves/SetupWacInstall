@@ -35,8 +35,8 @@ Setup Updates
       *c.	Put IC file and DSU 1.92 file - in those folders-dl.dell.com - /omimswac/
       
 2.	Add Paths to OMIMSWAC
-     * a.	IC, and DSU path for files in share for step 1b -above. in the links in the screen shot below (settings)
-     * b.	DRM settings have just the  Updates share path (with catalog xml)
+     * a.	IC, and DSU path for files in share for step 1b -above. see the setting icon in the screen shot below.
+     * b.	DRM settings have just the  Updates share path (with catalog xml) see DRM setting in screen shot below.
 ![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true)
 
 Troubleshooting
