@@ -54,7 +54,19 @@ Troubleshooting
 11.	Restart every cluster node
 
 
+Redeploy
 
+1. Remove OMIMSWAC
+2. Remove WAC
+3. Run setup wac install tool 1-9
+4. Reinstall WAC and install OMIMSWAC (option 5 in setup tool)
+5. Insall new versions of cluster extension and other related extensions
+6. Discover cluster
+
+
+log collection 
+
+Option #1 or Option #8
  
  Run from S2d node by running this command on the local PowerShell Line: 
 
