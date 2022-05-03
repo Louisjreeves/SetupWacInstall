@@ -8,7 +8,7 @@
 
 Initial steps
 1.	Go to drac on every node and enable redfish
-2.	Set the redfish Ip on each drac to a unique value- to other dracs
+2.	Set the redfish Ip on each drac to a unique value- to other dracs (only the last octet- IP must be 169.254.1.x)
 3.	Make sure the drac sessions tab sessions empty - if not clear out
 4.	Make sure the drac users tab has free spaces
  
@@ -17,16 +17,15 @@ Deployment steps- Deploy assist tool
 1.	(0) From one Cluster node and WAC machine
 2.	(1) From one cluster node and wac machine
 3.	(2)(3)- optional but ok for deployment
-4.	(4) Step 4 makes sure nothing will cause deployment failure 
+4.	(4) Step 4 makes sure nothing will cause deployment failure - run on each node- or on suspect nodes only
 5.	(5) Install WAC on Wac server
-      a.	Install OMIMSWAC extension using gear tab
+      a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
 6.	Use Cluster manager and setup the CAU role with CAU GUI.
 7.	Define a computer name CVO/CNO 
       a.	Prestage CVO- Prestage cluster computer objects in Active Directory Domain Services | Microsoft Docs
+      b. https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
 
-https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
 
-![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true)
 
 Setup Updates
  
@@ -34,10 +33,11 @@ Setup Updates
       a.	Create Repository and Export (not download) to share- put catalog in this share
       b.	Create a folder called IC and another called DSU
       c.	Put IC file and DSU 1.92 file - in those folders-dl.dell.com - /omimswac/
+      
 2.	Add Paths to OMIMSWAC
-      a.	IC, and DSU path for files in 1b -2 paths to define (settings)
+      a.	IC, and DSU path for files in share for step 1b -above. in the links in the screen shot below (settings)
       b.	DRM settings have just the  Updates share path (with catalog xml)
-
+![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true)
 
 Troubleshooting
 
