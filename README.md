@@ -1,7 +1,7 @@
-# SetupWacInstall
+# SetupWacInstallTool (SWIC)
 Helps clean Up WAC and OMIMSWAC for Cluster Management and Patch to succeed
 
-# SetupWacInstall
+# SetupWacInstall (SWIC)
 
 Automation tool for Windows Admin center and Open Manage Integration for Windows Admin Center.
 
