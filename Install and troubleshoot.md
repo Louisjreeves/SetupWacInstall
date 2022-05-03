@@ -19,24 +19,24 @@ Deployment steps- Deploy assist tool
 3.	(2)(3)- optional but ok for deployment
 4.	(4) Step 4 makes sure nothing will cause deployment failure - run on each node- or on suspect nodes only
 5.	(5) Install WAC on Wac server
-      a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
+     * a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
 6.	Use Cluster manager and setup the CAU role with CAU GUI.
 7.	Define a computer name CVO/CNO 
-      a.	Prestage CVO- Prestage cluster computer objects in Active Directory Domain Services | Microsoft Docs
-      b. https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
+     * a.	Prestage CVO- Prestage cluster computer objects in Active Directory Domain Services | Microsoft Docs
+     * b. https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
 
 
 
 Setup Updates
  
 1.	Install Dell Repository manager on a server with share
-      a.	Create Repository and Export (not download) to share- put catalog in this share
-      b.	Create a folder called IC and another called DSU
-      c.	Put IC file and DSU 1.92 file - in those folders-dl.dell.com - /omimswac/
+      *a.	Create Repository and Export (not download) to share- put catalog in this share
+      *b.	Create a folder called IC and another called DSU
+      *c.	Put IC file and DSU 1.92 file - in those folders-dl.dell.com - /omimswac/
       
 2.	Add Paths to OMIMSWAC
-      a.	IC, and DSU path for files in share for step 1b -above. in the links in the screen shot below (settings)
-      b.	DRM settings have just the  Updates share path (with catalog xml)
+     * a.	IC, and DSU path for files in share for step 1b -above. in the links in the screen shot below (settings)
+     * b.	DRM settings have just the  Updates share path (with catalog xml)
 ![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true)
 
 Troubleshooting
