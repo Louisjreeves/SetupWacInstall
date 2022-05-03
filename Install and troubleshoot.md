@@ -26,7 +26,7 @@ Deployment steps- Deploy assist tool
 
 https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
 
-
+![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true)
 
 Setup Updates
  
