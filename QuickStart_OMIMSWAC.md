@@ -2,7 +2,7 @@
 Open Manage Integration for Windows Admin Center Quick Start Guide. 
 Full Deployment Setup and Configuration for OMIMSWAC, WAC, DRM, IDRAC, CAU
 =========================================================================
-# Not to high security enviroments. You may have a problem getting started. 
+Note for high security enviroments. You may have a problem getting started. 
 CredSSP and Drac permissions require admin access to change. If Option 0 does not work for you, you may be in a catch 22 scenario
 steps to work around: 
 1. There is an additional script in the download called allpermissions.ps1. set-exectionpolicy -executionpolicy remotesigned then run on each node
