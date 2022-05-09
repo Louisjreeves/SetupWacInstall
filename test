@@ -1,5 +1,8 @@
-```ansi
-```ansi
-Welcome to [2;33mRebane[0m's [2;45m[2;37mDiscord[0m[2;45m[0m [2;31mC[0m[2;32mo[0m[2;33ml[0m[2;34mo[0m[2;35mr[0m[2;36me[0m[2;37md[0m Text Generator!
-```
-```
+from colorama import Fore, Back, Style
+
+# For Font color Use Fore.<color>
+print(Fore.GREEN + "Using Fore.GREEN Prints Text with Color Green")
+print(Fore.YELLOW + "Using Fore.YELLOQ Prints Text with yellow color")
+print(Fore.RED + "Using Fore.RED Prints Text in Red Color")
+print(Fore.LIGHTCYAN_EX + "Using Fore.CYAN Prints Text in Cyan color")
+print(Fore.LIGHTBLUE_EX + "Using Fore.LIGHTBLUE_EX Prints Text in light blue color")
