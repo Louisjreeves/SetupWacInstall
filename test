@@ -1,6 +1,8 @@
 
 $ `\textcolor{teal}{ \text{ Eq.(3-5) in the main text} } `$
 
+$`\textcolor{orange}{ \mathcal{O}(N^3)}`$.
+
 ```diff
 - text in red
 + text in green
