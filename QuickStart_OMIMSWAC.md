@@ -29,12 +29,14 @@ Initial steps
 
  
 ## Deployment steps- Deploy assist tool
+ Use step five above to begin the setupwacinstall script- choose 1 to download. 
+ if your offline, copy the the server, unzip and run .\setupwacinstall.  
  
-0.	(0) Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
-1.	(1) Required - Clears files and old installs. Run on one node and on the WAC server.
-2.	(2) Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
-3.	(3) Required - Checks many failure points. run on each node- or on suspect nodes only
-4.	(4) Required - Install WAC on Wac server. Do not run on Cluster node
+0.	Option 0- Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
+1.	Option 1 Required - Clears files and old installs. Run on one node and on the WAC server.
+2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
+3.	Option 3 Required - Checks many failure points. run on each node- or on suspect nodes only
+4.	Option 4 Required - Install WAC on Wac server. Do not run on Cluster node
      a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
 5. Final Steps for setup
      a. Use cluster manager to deploy CAU. 
