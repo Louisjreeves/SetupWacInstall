@@ -9,21 +9,44 @@
 Initial steps
 1.	Go to drac on every node and enable redfish
 2.	Set the redfish Ip on each drac to a unique value- to other dracs (only the last octet- IP must be 169.254.1.x)
-3.	Make sure the drac sessions tab sessions empty - if not clear out
+3.	Make sure the drac sessions tab sessions is not full of sessions. if clear out- if not clear out
 4.	Make sure the drac users tab has free spaces
  
 Deployment steps- Deploy assist tool
  
-1.	(0) From one Cluster node and WAC machine
-2.	(1) From one cluster node and wac machine
-3.	(2)(3)- optional but ok for deployment
-4.	(4) Step 4 makes sure nothing will cause deployment failure - run on each node- or on suspect nodes only
-5.	(5) Install WAC on Wac server
+0.	(0) Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
+1.	(1) Required - Clears files and old installs. Run on one node and on the WAC server.
+2.	(2) Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
+3.	(3) Required - Checks many failure points. run on each node- or on suspect nodes only
+4.	(4) Required - Install WAC on Wac server. Do not run on Cluster node
      * a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
-6.	Use Cluster manager and setup the CAU role with CAU GUI.
-7.	Define a computer name CVO/CNO 
+5. Final Steps for setup
+     * a. Use cluster manager to deploy CAU. 
+     * b. Before you do, go to ADUC and create a computer account in the same OU as the cluster nodes
+          *(1) Once Created go to the OU above and right click ->properties-> security tab-click add -> change object type to computer
+          *(2) add the Computer name just created. and add the rights to write computer ojects 
+          *(3) Read/Write computer ojbects, Read/Write child objects, Read and write.
+          *(4) make sure the cluster is also in this OU and has full control over the cluster nodes
+      * c. Create a share not in the cluster or vms on cluster- all nodes need full control to this folder. 
+      *   *(1) Deploy Dell Repository manager to this machine. 
+      *   *(2) Create a repository for the Cluster server Model. use this share for the repository location.
+      *   *(3) Export the repository to this share into an updates folder. this locaton will have 4 total sub folders
+      *         1. 
+
+Additional Tools Available
+
+5.	Use Cluster manager and setup the CAU role with CAU GUI.
+     * a. Option 5 will redeploy the CAU if it was already deployed and maybe does not work. 
+     * b. Gotcha exists 
+
+6. redfish test
+7. CAU
      * a.	Prestage CVO- Prestage cluster computer objects in Active Directory Domain Services | Microsoft Docs
      * b. https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
+     * c. Define a computer name CVO/CNO 
+9.   Logs
+10.	Constrained Delegation 
+  
 
 
 
