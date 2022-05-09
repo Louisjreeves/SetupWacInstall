@@ -39,6 +39,8 @@ Initial steps
 4.	Option 4 Required - Install WAC on Wac server. Do not run on Cluster node
      a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
 5. Final Steps for setup
+
+
      a. Use cluster manager to deploy CAU. 
      
           1. Before you do, go to ADUC and create a computer account in the same OU as the cluster nodes
