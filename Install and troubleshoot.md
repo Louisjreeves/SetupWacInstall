@@ -33,64 +33,65 @@ Deployment steps- Deploy assist tool
           *(2) DEllUpdates - Folder where all the OMIMSWAC files will be located \\Servername\Folder
           *(3) DSU - Dell Server Update EXE- Place in this folder - \\Servername\DEllUpdatesDSU\
              *(i) Download DSU from  https://dl.dell.com/omimswac/ 
-             *(ii) path will go to OMIMSWAC \\Servername\DEllUpdates\DSU\Systems-Management_Application_5C2CW_WN64_1.9.2.0_A00.EXE
+             *(ii) path will later be used by OMIMSWAC  \\Servername\DEllUpdates\DSU\Systems-Management_Application_5C2CW_WN64_1.9.2.0_A00.EXE
           *(4) IC Inventory COllector. place in the path created -  \\Servername\DEllUpdates\IC\
              *(i) Download from  Download https://dl.dell.com/omimswac/ 
-             *(ii) path will go to OMIMSWAC  - \\Servername\DEllUpdates\IC\invcol_8YPK7_WIN64_21_12_200_1196_A00.exe
-       *c. Open Repository manager (DRM)
+             *(ii) path will later be used by OMIMSWAC  - \\Servername\DEllUpdates\IC\invcol_8YPK7_WIN64_21_12_200_1196_A00.exe
+       *c. Deploy Repository manager (DRM)
+           *(1) Deploy Dell Repository manager to this share machine. 
+           *(2) Create a repository for the Cluster server Model number . use these shares for the repository location.
+           *(3) EXPORT EXPORT EXPORT the repository to this share into an updates folder. this locaton will have 4 total sub folders
+           *(4) DO NOT download the repostiory it does not work wth OMIMSWAC (catalog created on export)
+              *(i) path will later be used by OMIMSWAC- Export  to \\Servername\DEllUpdates\updates\hcios21h2_1.00_Catalog.xml
+         
              
-      *c. Add Paths to OMIMSWAC for Upates to work
-         *(1) Add IC DSU and Updates catalog location paths to the two locations showing in the screen shot below
-      *d. Backup 
+      *d Add Paths to OMIMSWAC for Upates to work
+         *(1) Add IC DSU and Updates catalog location paths to the two locations showing in the SCREEN SHOT BELOW
+            *(i) The Settings ICON will have the IC and DSU File paths- required to be entered. 
+            *(ii) Once YOu choose the UPDATE tab, choose manual and DRM radio button for the catalog path (updates path)
+      *e Backup - this folder will be used for log collection to a central location (Option #8)
       
       
  ![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true) 
 
           
-      *   *(1) Deploy Dell Repository manager to this machine. 
-      *   *(2) Create a repository for the Cluster server Model. use this share for the repository location.
-      *   *(3) Export the repository to this share into an updates folder. this locaton will have 4 total sub folders
+  This completes your Deployment. Enjoy you years of Updates and Patching to work !!! 
 
 
 
-
-2.	Add Paths to OMIMSWAC
-     * a.	IC, and DSU path for files in share for step 1b -above. see the setting icon in the screen shot below.
-     * b.	DRM settings have just the  Updates share path (with catalog xml) see DRM setting in screen shot below.
 
 Additional Tools Available
-
- 
-
-
-
- 
-      
+     
 
 
 Troubleshooting
 
-1.	(8) collect logs- run on one cluster node
-2.	(6) test redfish
-3.	(4) Several Tests
-4.	(2) Repair usb
-5.	(3) repair ISM
-6.	(1) cleanup for wac only
-7.	(0) Re-apply pre-requisites
-8.	(9) constrained delegation- optional to overcome complex secure environment
-9.	Test-cluster or cluster validation
-10.	Restart every drac
-11.	Restart every cluster node
+* Option 8 - Use this to collect logs to send to support 
+* Option 9  Constrained Delegation adds trust for the nodes and the WAC server for each other - only for Kerberos. This may be required or desirable. 
+* Option 6 - Redfish test setup
+     *(a) Use this if the product is not working. This will let you know the redfish is not working
+     *(b) If this is the case. Use option 5. Do this on a per Node basis. This will clear the USB NIC for reuse. No changes required. 
+* Option 5 - Clears the USB NIC so OMIMSWAC will recreate the needed Network Components to function- this is automated by OMIMSWAC. 
+* Option 7 - Will recreate the CAU role, but the assumption is the CVO is already created and works. DO step 5A first. 
+
+Additional Troubleshooting if Updates Fail 
+
+1.	Test-cluster or cluster validation
+2.	Restart every drac
+3.	Restart every cluster node
 
 
 Redeploy
 
 1. Remove OMIMSWAC
 2. Remove WAC
-3. Run setup wac install tool 1-9
-4. Reinstall WAC and install OMIMSWAC (option 5 in setup tool)
-5. Insall new versions of cluster extension and other related extensions
-6. Discover cluster
+3. Run SetupWacInstall Option 7 To recreate the CAU with original working CVO name
+4. Run SetupWacInstall Options 0,1,2,3
+   *(a) Correct any issues found from option 3
+   *(b) Run option 3 from each node. correct each node and any issues 
+5. Run Option 4 from the WAC server. This will deploy fresh install. 
+6. Insall new versions of cluster extension and other related extensions
+7. Discover cluster with OMIMSWAC
 
 
 log collection 
