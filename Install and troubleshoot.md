@@ -27,6 +27,7 @@ Deployment steps- Deploy assist tool
           *(2) add the Computer name just created. and add the rights to write computer ojects 
           *(3) Read/Write computer ojbects, Read/Write child objects, Read and write.
           *(4) make sure the cluster is also in this OU and has full control over the cluster nodes
+          *(5) reference https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
       * b. Create a share - not in the cluster or vms on cluster- all nodes need full control to this folder. 
           *(1) Main share \\Servername
           *(2) DEllUpdates - Folder where all the OMIMSWAC files will be located \\Servername\Folder
@@ -36,42 +37,36 @@ Deployment steps- Deploy assist tool
           *(4) IC Inventory COllector. place in the path created -  \\Servername\DEllUpdates\IC\
              *(i) Download from  Download https://dl.dell.com/omimswac/ 
              *(ii) path will go to OMIMSWAC  - \\Servername\DEllUpdates\IC\invcol_8YPK7_WIN64_21_12_200_1196_A00.exe
-          *(5) Updates
-          *(6) Backup 
+       *c. Open Repository manager (DRM)
+             
+      *c. Add Paths to OMIMSWAC for Upates to work
+         *(1) Add IC DSU and Updates catalog location paths to the two locations showing in the screen shot below
+      *d. Backup 
+      
+      
+ ![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true) 
+
           
       *   *(1) Deploy Dell Repository manager to this machine. 
       *   *(2) Create a repository for the Cluster server Model. use this share for the repository location.
       *   *(3) Export the repository to this share into an updates folder. this locaton will have 4 total sub folders
-      *         1. 
-
-Additional Tools Available
-
-5.	Use Cluster manager and setup the CAU role with CAU GUI.
-     * a. Option 5 will redeploy the CAU if it was already deployed and maybe does not work. 
-     * b. Gotcha exists 
-
-6. redfish test
-7. CAU
-     * a.	Prestage CVO- Prestage cluster computer objects in Active Directory Domain Services | Microsoft Docs
-     * b. https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
-     * c. Define a computer name CVO/CNO 
-9.   Logs
-10.	Constrained Delegation 
-  
 
 
 
-Setup Updates
- 
-1.	Install Dell Repository manager on a server with share
-      *a.	Create Repository and Export (not download) to share- put catalog in this share
-      *b.	Create a folder called IC and another called DSU
-      *c.	Put IC file and DSU 1.92 file - in those folders-dl.dell.com - /omimswac/
-      
+
 2.	Add Paths to OMIMSWAC
      * a.	IC, and DSU path for files in share for step 1b -above. see the setting icon in the screen shot below.
      * b.	DRM settings have just the  Updates share path (with catalog xml) see DRM setting in screen shot below.
-![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true)
+
+Additional Tools Available
+
+ 
+
+
+
+ 
+      
+
 
 Troubleshooting
 
