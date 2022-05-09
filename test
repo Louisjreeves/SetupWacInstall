@@ -10,3 +10,11 @@
   export class AppComponent {
     title = 'app works!';
   }
+  
+  
+  ```diff
++ this text is highlighted in green
+- this text is highlighted in red
+```
+
+LARGE RED CIRCLE (&#x1F534;): 🔴
