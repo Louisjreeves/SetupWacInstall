@@ -21,9 +21,13 @@ Initial steps
 4.	Make sure the drac users tab has free spaces
 5.	Download the SetupWacInstall from Github using the link below. For HCIOS, choose option 15 and paste in this link: 
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="SetupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandAndSetupCORP.ps1'));Invoke-SetupWacInstall
+
 6. Follow the deployment steps below
+
+
  
-Deployment steps- Deploy assist tool
+## Deployment steps- Deploy assist tool
  
 0.	(0) Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
 1.	(1) Required - Clears files and old installs. Run on one node and on the WAC server.
@@ -81,12 +85,12 @@ Deployment steps- Deploy assist tool
 
           
   This completes your Deployment. Enjoy you years of Updates and Patching to work !!! 
-==========================================================================================================================
-Additional Tools Available
-==========================================================================================================================     
+  
+  
+## Additional Tools Available 
 
 
-Troubleshooting
+# Troubleshooting
 
 * Option 8 - Use this to collect logs to send to support 
 * Option 9  Constrained Delegation adds trust for the nodes and the WAC server for each other - only for Kerberos. This may be required or desirable. 
@@ -96,14 +100,14 @@ Troubleshooting
 * Option 5 - Clears the USB NIC so OMIMSWAC will recreate the needed Network Components to function- this is automated by OMIMSWAC. 
 * Option 7 - Will recreate the CAU role, but the assumption is the CVO is already created and works. DO step 5A first. 
 
-Additional Troubleshooting if Updates Fail 
+# Additional Troubleshooting if Updates Fail 
 
 1.	Test-cluster or cluster validation
 2.	Restart every drac
 3.	Restart every cluster node
 
 
-Redeploy
+# Redeploy
 
 1. Remove OMIMSWAC
 2. Remove WAC
@@ -116,7 +120,7 @@ Redeploy
 7. Discover cluster with OMIMSWAC
 
 
-log collection 
+## log collection 
 
 Option #1 or Option #8
  
