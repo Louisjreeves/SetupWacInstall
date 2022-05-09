@@ -1,4 +1,5 @@
 
+Open Manage Integration for Windows Admin Center Quick Start Guide. 
 Full Deployment Setup and Configuration for OMIMSWAC, WAC, DRM, IDRAC, CAU
 =========================================================================
 
