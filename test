@@ -1,22 +1,3 @@
-  import { Component } from '@angular/core';
-  import { MovieService } from './services/movie.service';
-
-  @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
-    providers: [ MovieService ]
-  })
-  export class AppComponent {
-    title = 'app works!';
-  }
-  
-  
-  ```diff
-+ this text is highlighted in green
-- this text is highlighted in red
-```
-
 ```ansi
 Welcome to [2;33mRebane[0m's [2;45m[2;37mDiscord[0m[2;45m[0m [2;31mC[0m[2;32mo[0m[2;33ml[0m[2;34mo[0m[2;35mr[0m[2;36me[0m[2;37md[0m Text Generator!
 ```
