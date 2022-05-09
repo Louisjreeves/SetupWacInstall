@@ -19,6 +19,9 @@ Initial steps
 2.	Set the redfish Ip on each drac to a unique value- to other dracs (only the last octet- IP must be 169.254.1.x)
 3.	Make sure the drac sessions tab sessions is not full of sessions. if clear out- if not clear out
 4.	Make sure the drac users tab has free spaces
+5.	Download the SetupWacInstall from Github using the link below. For HCIOS, choose option 15 and paste in this link: 
+
+6. Follow the deployment steps below
  
 Deployment steps- Deploy assist tool
  
