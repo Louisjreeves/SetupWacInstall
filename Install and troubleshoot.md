@@ -1,6 +1,14 @@
 
+=======================================================================================================================
+Full Deployment Setup and Configuration for OMIMSWAC, WAC, DRM, IDRAC, CAU
+=======================================================================================================================
 
+Estimated time : 
 
+1. Setup of OMIMSWAC: 30 minutes
+2. Estimated time of DRM: 30 Minutes
+3. Learning curve: MODERATE
+4. Complexity of Product:  HIGH - Do not deviate from the steps. - This setup Protects you from several possible failure Points. 
 
 
 ## SetupWacInstall Pic Example
@@ -43,6 +51,7 @@ Deployment steps- Deploy assist tool
                    
 
      c. Deploy Repository manager (DRM)
+     
           1. Deploy Dell Repository manager to this share machine. 
           2. Create a repository for the Cluster server Model number . use these shares for the repository location.
           3. EXPORT EXPORT EXPORT the repository to this share into an updates folder. this locaton will have 4 total sub folders
@@ -52,10 +61,14 @@ Deployment steps- Deploy assist tool
 
              
      d. Add Paths to OMIMSWAC for Upates to work
+     
           (1) Add IC DSU and Updates catalog location paths to the two locations showing in the SCREEN SHOT BELOW
              (i) The Settings ICON will have the IC and DSU File paths- required to be entered. 
              (ii) Once YOu choose the UPDATE tab, choose manual and DRM radio button for the catalog path (updates path)
-     e. Backup - this folder will be used for log collection to a central location (Option #8)
+             
+             
+             
+    e. Backup - this folder will be used for log collection to a central location (Option #8)
  
  
  
@@ -65,12 +78,9 @@ Deployment steps- Deploy assist tool
 
           
   This completes your Deployment. Enjoy you years of Updates and Patching to work !!! 
-
-
-
-
+==========================================================================================================================
 Additional Tools Available
-     
+==========================================================================================================================     
 
 
 Troubleshooting
