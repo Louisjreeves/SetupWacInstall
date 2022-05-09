@@ -14,14 +14,13 @@ Initial steps
  
 Deployment steps- Deploy assist tool
  
-
-*0.	(0) Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
-*1.	(1) Required - Clears files and old installs. Run on one node and on the WAC server.
-*2.	(2) Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
-*3.	(3) Required - Checks many failure points. run on each node- or on suspect nodes only
-*4.	(4) Required - Install WAC on Wac server. Do not run on Cluster node
+0.	(0) Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
+1.	(1) Required - Clears files and old installs. Run on one node and on the WAC server.
+2.	(2) Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
+3.	(3) Required - Checks many failure points. run on each node- or on suspect nodes only
+4.	(4) Required - Install WAC on Wac server. Do not run on Cluster node
      * a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
-*5. Final Steps for setup
+5. Final Steps for setup
      * a. Use cluster manager to deploy CAU. 
           *(0) Before you do, go to ADUC and create a computer account in the same OU as the cluster nodes
           *(1) Once Created go to the OU above and right click ->properties-> security tab-click add -> change object type to computer
