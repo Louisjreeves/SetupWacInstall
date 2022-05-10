@@ -13,6 +13,28 @@ steps to work around:
 
 ------------------------------------------------------------------------
 
+For the Experienced and Initiated
+
+ [bold]These are the steps for Install
+Full steps in the guide below
+
+Pick 1 cluster node
+0,1,2,3,4
+
+Wac server
+1 then 5
+
+DRM - Dell repository manager 
+
+CAU 
+	• Cluster manager 
+	• Create CVO AD
+	• Use option 7
+
+Populate share locations in OMIMSWAC
+![image](https://user-images.githubusercontent.com/79279019/167702904-c9942efd-9924-402b-bfc7-7304bd9e6413.png)
+
+
 
 Estimated time : 
 
