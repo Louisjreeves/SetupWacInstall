@@ -31,8 +31,7 @@ CAU
 	• Create CVO AD
 	• Use option 7
 
-Populate share locations in OMIMSWAC
-![image](https://user-images.githubusercontent.com/79279019/167702904-c9942efd-9924-402b-bfc7-7304bd9e6413.png)
+-------------------------------------------------------------------
 
 
 
@@ -111,9 +110,14 @@ Initial steps
              (i) The Settings ICON will have the IC and DSU File paths- required to be entered. 
              (ii) Once YOu choose the UPDATE tab, choose manual and DRM radio button for the catalog path (updates path)
              
+    
+    Populate share locations in OMIMSWAC
+![image](https://user-images.githubusercontent.com/79279019/167702904-c9942efd-9924-402b-bfc7-7304bd9e6413.png)         
              
-             
-    e. Backup - this folder will be used for log collection to a central location (Option #8)
+   
+   
+   
+	e. Backup - this folder will be used for log collection to a central location (Option #8)
  
  
  
