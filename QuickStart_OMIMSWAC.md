@@ -9,7 +9,7 @@ steps to work around:
     * Open Powerehell as admin and run set-exectionpolicy -executionpolicy remotesigned 
     * then run allpermissions.ps1 on each node- then begin at setp 1.
 2. You may also run option 8 from the AD server. This may mitigate some of your permissions issues. 
-3. Add the wac folder and the folder where this script is located, to the antivirus exclusion rules. 
+3. Add the WAC folder and the folder where this script is located, to the antivirus exclusion rules. 
 
 ------------------------------------------------------------------------
 
