@@ -13,9 +13,8 @@ steps to work around:
 
 ------------------------------------------------------------------------
 
-For the Experienced and Initiated
+![image](https://user-images.githubusercontent.com/79279019/168081256-c1eeb5f8-8cdd-4b99-9ceb-a80ffa4a3ce0.png)
 
-![image](https://user-images.githubusercontent.com/79279019/167702904-c9942efd-9924-402b-bfc7-7304bd9e6413.png)   
 
 -------------------------------------------------------------------
 
