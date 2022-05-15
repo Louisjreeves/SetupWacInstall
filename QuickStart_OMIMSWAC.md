@@ -10,6 +10,9 @@ steps to work around:
     * then run allpermissions.ps1 on each node- then begin at setp 1.
 2. You may also run option 8 from the AD server. This may mitigate some of your permissions issues. 
 3. Add the WAC folder and the folder where this script is located, to the antivirus exclusion rules. 
+4. I have made an alternate powershell command for offline environments. you will need to manually download files. 
+	a. See the bottom of this guide for file names to rename. 
+	b. drop the downloads in the script folder. 
 
 ------------------------------------------------------------------------
 
