@@ -163,7 +163,7 @@ ONLINE INSTALL
  Windows Admin Center. - name the file WindowsAdminCenter.msi
  
  ```Powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="OfflineWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandOfflineInstall.ps1'));Invoke-OfflineWacInstall
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="OfflineWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandOfflineWacInstall.ps1'));Invoke-OfflineWacInstall
 ```
  
 
