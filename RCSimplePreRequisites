@@ -1,5 +1,27 @@
 Simple Offline Release Cantidate (SORC) OMIMSWAC
 
+Open Manage Integration for Windows Admin Center Quick Start Guide. Offline steps
+BASE prerequisites OMIMSWAC, WAC, DRM, IDRAC, CAU
+=========================================================================
+Note for high security enviroments. You may have a problem getting started. 
+ 
+1. This script is designed to help with this difficulty. 
+2. Before running this scipt make sure you can access the C$ share from each node to each node
+3. Make sure you can successfully etsn (enter-psSession) to every node from any other node
+4. Login with admin credentials. This tool uses the logged in creds for all actions. 
+5. Make sure to run Powershell as administrator. 
+
+THis Script will Allow you to run on one node, and install the Drac tools on all nodes, as well as ISM module and add every needed
+fix to run the OMIMSWAC.
+
+------------------------------------------------------------------------
+
+![image](https://user-images.githubusercontent.com/79279019/168081256-c1eeb5f8-8cdd-4b99-9ceb-a80ffa4a3ce0.png)
+
+This is the Folder you will copy to one cluster node. 
+
+-------------------------------------------------------------------
+
 1) Step one. Download the Zip folder called RCSImplePreRequisites.zip (Quit the script and when it asks to put in a cluster name.) Find it in the Downloads folder. 
 Use this link then move to step 2:
 
