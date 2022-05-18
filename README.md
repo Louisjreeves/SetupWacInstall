@@ -54,14 +54,14 @@ Use this link then move to step 2:
  
  ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
  
-•	Locate the folder called RCSimplePreRequisites (downloads folder)
-•	You will need to copy the two files below into this folder. 
-•	Download this file https://downloads.dell.com/FOLDER07549599M/1/DellEMC-iDRACTools-Web-WINX64-10.2.0.0-4583_A00.exe 
-   o	Rename the file to  racadmininstall.exe and place inside the RCSIMPLEPreRequisites folder. 
-•	Download this file : https://downloads.dell.com/FOLDER07508105M/1/OM-iSM-Dell-Web-X64-4.1.0.0-2410_A00.exe 
-   o	Rename this file to  isminstall.exe and place it into the  RCSIMPLEPreRequisites folder
-•	Copy the script folder to a cluster node. 
-•	Open PowerShell as administrator and run  .\RcSimplePrerequisites.ps1 , from inside the RCSimplePreRequisites  folder . 
+*	Locate the folder called RCSimplePreRequisites (downloads folder)
+*	You will need to copy the two files below into this folder. 
+* 	Download this file https://downloads.dell.com/FOLDER07549599M/1/DellEMC-iDRACTools-Web-WINX64-10.2.0.0-4583_A00.exe 
+    *	Rename the file to  racadmininstall.exe and place inside the RCSIMPLEPreRequisites folder. 
+*	Download this file : https://downloads.dell.com/FOLDER07508105M/1/OM-iSM-Dell-Web-X64-4.1.0.0-2410_A00.exe 
+    *	Rename this file to  isminstall.exe and place it into the  RCSIMPLEPreRequisites folder
+* 	Copy the script folder to a cluster node. 
+* 	Open PowerShell as administrator and run  .\RcSimplePrerequisites.ps1 , from inside the RCSimplePreRequisites  folder . 
 
 Hit yes every single time an approval pops up, without fail. This is your pre-requisites being applied. 16 nodes is 64 yes’s!
 
