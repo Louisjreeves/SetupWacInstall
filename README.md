@@ -41,17 +41,30 @@ This tool uses all different sections. Start with Step one and work your way dow
 ```
 ===========================
 Simple Offline Release Cantidate (SORC) OMIMSWAC
- * OFLINE INSTALLER - You will need to manually put the Following files into the applicaiton folder: 
- * Dell Idrac tools - name the file racadmininstall.exe
- * Dell ISM module - Name the file isminstall.exe
- * Windows Admin Center. - name the file WindowsAdminCenter.msi
- * [bold] After you choose "1" to dowload, Cancel instead of putting in the cluster name
- * You will need to copy the file drac tools, renamed as racadmininstall.exe to the script folder
- * You will need to copy the ISM file to the script folder, renamed as isminstall.exe
- * Run the script- this will prompt for yes - 4 times per node minumum. 16 nodes will be 64 yes's minimum.
- * Uncomment lines 116 and 117 to allow the ISM module to install. Current default only installs drac tools on every node and completes fixes and repairs. 
+
+1) Step one. Download the Zip folder called RCSImplePreRequisites.zip (Quit the script and when it asks to put in a cluster name.) Find it in the Downloads folder. 
+Use this link then move to step 2:
 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandSImplePreRequisites.ps1'));Invoke-RCSimplePreRequsites
 ```
+
+
+ 2) Follow steps in the bullets below. This is what you will be focused on- this folder called RCSimplePreRequisites
+ 
+ ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
+ 
+•	Locate the folder called RCSimplePreRequisites (downloads folder)
+•	You will need to copy the two files below into this folder. 
+•	Download this file https://downloads.dell.com/FOLDER07549599M/1/DellEMC-iDRACTools-Web-WINX64-10.2.0.0-4583_A00.exe 
+   o	Rename the file to  racadmininstall.exe and place inside the RCSIMPLEPreRequisites folder. 
+•	Download this file : https://downloads.dell.com/FOLDER07508105M/1/OM-iSM-Dell-Web-X64-4.1.0.0-2410_A00.exe 
+   o	Rename this file to  isminstall.exe and place it into the  RCSIMPLEPreRequisites folder
+•	Copy the script folder to a cluster node. 
+•	Open PowerShell as administrator and run  .\RcSimplePrerequisites.ps1 , from inside the RCSimplePreRequisites  folder . 
+
+Hit yes every single time an approval pops up, without fail. This is your pre-requisites being applied. 16 nodes is 64 yes’s!
+
+
+
  
