@@ -16,7 +16,7 @@ fix to run the OMIMSWAC.
 
 ------------------------------------------------------------------------
 
-![image](https://user-images.githubusercontent.com/79279019/168081256-c1eeb5f8-8cdd-4b99-9ceb-a80ffa4a3ce0.png)
+ ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
 
 This is the Folder you will copy to one cluster node. 
 
