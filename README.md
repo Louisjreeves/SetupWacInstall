@@ -40,11 +40,16 @@ This tool uses all different sections. Start with Step one and work your way dow
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandOfflineWacInstall.ps1'));Invoke-OfflineWacInstall
 ```
 ===========================
-Simple Offline Release Cantidate
- OFLINE INSTALLER - You will need to manually put the Following files into the applicaiton folder: 
- Dell Idrac tools - name the file racadmininstall.exe
- Dell ISM module - Name the file isminstall.exe
- Windows Admin Center. - name the file WindowsAdminCenter.msi
+Simple Offline Release Cantidate (SORC) OMIMSWAC
+ * OFLINE INSTALLER - You will need to manually put the Following files into the applicaiton folder: 
+ * Dell Idrac tools - name the file racadmininstall.exe
+ * Dell ISM module - Name the file isminstall.exe
+ * Windows Admin Center. - name the file WindowsAdminCenter.msi
+ * [bold] After you choose "1" to dowload, Cancel instead of putting in the cluster name
+ * You will need to copy the files drac tools, renamed as racadmininstall.exe to the script folder
+ * You will need to copy the ISM files to the script folder, renamed as isminstall.exe
+ * Run the script- this will prompt for yes - 4 times per node minumum. 
+ * Uncomment lines 116 and 117 to allow the ISM module to install. Current default only installs drac tools on every node and completes fixes and repairs. 
 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandSImplePreRequisites.ps1'));Invoke-RCSimplePreRequsites
