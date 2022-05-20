@@ -30,15 +30,6 @@ This tool uses all different sections. Start with Step one and work your way dow
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="SetupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandAndSetupCORP.ps1'));Invoke-SetupWacInstall
 ```
 
- =============================
- * OFLINE INSTALLER - You will need to manually put the Following files into the applicaiton folder: 
- * Dell Idrac tools - name the file racadmininstall.exe
- * Dell ISM module - Name the file isminstall.exe
- * Windows Admin Center. - name the file WindowsAdminCenter.msi
- 
- ```Powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandOfflineWacInstall.ps1'));Invoke-OfflineWacInstall
-```
 ===========================
 Simple Offline Release Cantidate (SORC) OMIMSWAC
 
