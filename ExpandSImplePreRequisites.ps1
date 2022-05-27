@@ -21,7 +21,7 @@ try
     Expand-Archive -Path $mydownloads\RCSimplePreRequsites.zip -DestinationPath $mydownloads\RCSimplePreRequsites -Force
  
  
- $activedirectory= "C:\Users\$myuser\RCSimplePreRequsites"
+ $activedirectory= "C:\Users\$myuser\downloads\RCSimplePreRequsites"
  cd c:\
  set-location $activedirectory
   .\RCSimplePreRequsites.ps1
