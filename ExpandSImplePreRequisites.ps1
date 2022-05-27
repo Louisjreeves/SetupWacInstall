@@ -3,8 +3,8 @@
 $ans1 = Read-host "Would you like to download and run or do you have the file pre-downloaded? 1=Proceed online 2=I have the file "
 
 If ($ans1 -ieq "1") { 
-set-location c:\users\$env:username
- $myloc = "c:\users\$env:username"
+set-location $env:USERPROFILE
+ $myloc = $env:USERPROFILE
 $MyTemp=(Get-Item $myloc).fullname
 $mydownloads= (New-Object -ComObject Shell.Application).NameSpace('shell:$mytemp').Self.Path
 $myuser= $env:USERNAME
@@ -23,7 +23,7 @@ try
  
  
  $activedirectory= "C:\Users\$myuser\RCSimplePreRequsites"
- cd c:\
+ set-location "c:\"
  set-location $activedirectory
   .\RCSimplePreRequsites.ps1
 
