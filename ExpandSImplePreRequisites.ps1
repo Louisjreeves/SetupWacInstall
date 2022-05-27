@@ -3,7 +3,7 @@
 $ans1 = Read-host "Would you like to download and run or do you have the file pre-downloaded? 1=Proceed online 2=I have the file "
 
 If ($ans1 -ieq "1") { 
-
+set-location c:\users\$env:username
 $MyTemp=(Get-Item $env:temp).fullname
 $mydownloads= (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
 $myuser= $env:USERNAME
