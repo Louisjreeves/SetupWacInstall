@@ -4,8 +4,9 @@ $ans1 = Read-host "Would you like to download and run or do you have the file pr
 
 If ($ans1 -ieq "1") { 
 set-location c:\users\$env:username
-$MyTemp=(Get-Item $env:temp).fullname
-$mydownloads= (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
+ $myloc = "c:\users\$env:username"
+$MyTemp=(Get-Item $myloc).fullname
+$mydownloads= (New-Object -ComObject Shell.Application).NameSpace('shell:$mytemp').Self.Path
 $myuser= $env:USERNAME
  
 try
