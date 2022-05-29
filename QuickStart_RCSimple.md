@@ -2,17 +2,7 @@
 Open Manage Integration for Windows Admin Center Quick Start Guide. 
 Full Deployment Setup and Configuration for OMIMSWAC, WAC, DRM, IDRAC, CAU
 =========================================================================
-Note for high security enviroments. You may have a problem getting started. 
-CredSSP and Drac permissions require admin access to change settings from windows. If Option 0 does not work for you, you may be in a catch 22 scenario
-steps to work around: 
-1. There is an additional script in the download called allpermissions.ps1. 
-    * Open Powerehell as admin and run set-exectionpolicy -executionpolicy remotesigned 
-    * then run allpermissions.ps1 on each node- then begin at setp 1.
-2. You may also run option 8 from the AD server. This may mitigate some of your permissions issues. 
-3. Add the WAC folder and the folder where this script is located, to the antivirus exclusion rules. 
-4. I have made an alternate powershell command for offline environments. you will need to manually download files. 
-	a. See the bottom of this guide for file names to rename. 
-	b. drop the downloads in the script folder. 
+
 
 ------------------------------------------------------------------------
 
@@ -32,7 +22,11 @@ Estimated time :
 
 
 ## SetupWacInstall Pic Example
-![Image](https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/SetupWacInstall.jpg) 
+ 
+![image](https://user-images.githubusercontent.com/79279019/170881994-5e093cfb-dd06-4461-a99b-1f17a00390c3.png)
+![image](https://user-images.githubusercontent.com/79279019/170882007-2ed5c7e0-2f1a-46af-a8af-5d8a9c8b82ae.png)
+![image](https://user-images.githubusercontent.com/79279019/170882022-66298f32-bcb7-4b15-b20a-beb7a857217d.png)
+
 
 Initial steps
 1.	Go to drac on every node and enable redfish
@@ -185,5 +179,20 @@ Use this link then move to step 2:
 * 	Open PowerShell as administrator and run  .\RcSimplePrerequisites.ps1 , from inside the RCSimplePreRequisites  folder . 
 
 Hit yes every single time an approval pops up, without fail. This is your pre-requisites being applied. 16 nodes is 64 yes’s!
+
+
+# # For High Security Environments
+
+Note for high security enviroments. You may have a problem getting started. 
+CredSSP and Drac permissions require admin access to change settings from windows. If Option 0 does not work for you, you may be in a catch 22 scenario
+steps to work around: 
+1. There is an additional script in the download called allpermissions.ps1. 
+    * Open Powerehell as admin and run set-exectionpolicy -executionpolicy remotesigned 
+    * then run allpermissions.ps1 on each node- then begin at setp 1.
+2. You may also run option 8 from the AD server. This may mitigate some of your permissions issues. 
+3. Add the WAC folder and the folder where this script is located, to the antivirus exclusion rules. 
+4. I have made an alternate powershell command for offline environments. you will need to manually download files. 
+	a. See the bottom of this guide for file names to rename. 
+	b. drop the downloads in the script folder. 
 
 
