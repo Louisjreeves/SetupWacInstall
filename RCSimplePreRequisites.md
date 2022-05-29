@@ -34,11 +34,11 @@ Simple check off list: complete these and the Deployment will be finished:
  ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
 
 ## steps to run before Deploying Windows admin center: 
-1.	Option 1 Required -  All prerequsites for the product to work. - Run on one Cluster node and WAC machine
-2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
-3.	Option 3 Required - Checks Steps one and 2.
-4.	Option 4 Required - Checks USBNIC status and IP connectivity
-5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies.
+1.	Option 1 Required -  All prerequsites for the product to work. - Run on one Cluster node and WAC machine. Drac tools and fixes.
+2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server. ISM module and fixes.
+3.	Option 3 Required - Checks Steps one and 2. checks and requirements
+4.	Option 4 Required - Checks USBNIC status and IP connectivity. check connectivity
+5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies ports open.
 6.      Option 6 Multi-Menu 
 
 	 1.  Troubleshooting -Repair CLuster Performance History
@@ -51,7 +51,7 @@ Simple check off list: complete these and the Deployment will be finished:
 7.      Option 7 - Troublehshooting - COllect logs, auto convert to text and save to local share. 
 8.      Option 8 Multi-Menu
 
-	 1. Recomended - Windows Admin Center Install 
+	 1. Recommended - Windows Admin Center Install 
 	 2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
 	 3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
 	 4. Optional setup - Constrained Delegation 
@@ -59,7 +59,7 @@ Simple check off list: complete these and the Deployment will be finished:
 		 
 9.     Option 9 Deployment for proxy organizations - required! and Patch and update not supported if you use proxy - use manual Dell DRM download  
 
-g.     Hidden option- search for gsespace in script and you can add your own script and run as option g in the menu. 
+g.     Hidden option- search for gsespace in script and you can add your own script lines and run as hidden option g in the menu. 
 
 
  
