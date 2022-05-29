@@ -148,7 +148,7 @@ Run the powershell Here  to download, Extract and run:
 Hit yes every single time an approval pops up, without fail. This is your pre-requisites being applied. 16 nodes is 64 yes’s!
 
 
-# Note for high security enviroments. You may have a problem getting started. 
+# Note for high security environments. You may have a problem getting started. 
  
 1. This script is designed to help with this difficulty. 
 2. Before running this scipt make sure you can access the C$ share from each node to each node
