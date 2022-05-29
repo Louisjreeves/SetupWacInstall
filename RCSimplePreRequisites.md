@@ -24,21 +24,21 @@ THis Script running in the download:
 5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies.
 6.      Option 6 Multi-Menu 
 
-	 *1.  Troubleshooting -Repair CLuster Performance History
-	 *2.  Troubleshooting -Repair CAU Cluster aware update if CAU VCO virtual computer object is already defined and setup. 
-	 *3.  Troubleshooting -remove USB Drac Network from cluster communication
-	 *4.  Troubleshooting - Restart all dracs
-	 *5.  Troubleshooting - Test and set port 445 and test DC connectivity all nodes
+	 1.  Troubleshooting -Repair CLuster Performance History
+	 2.  Troubleshooting -Repair CAU Cluster aware update if CAU VCO virtual computer object is already defined and setup. 
+	 3.  Troubleshooting -remove USB Drac Network from cluster communication
+	 4.  Troubleshooting - Restart all dracs
+	 5.  Troubleshooting - Test and set port 445 and test DC connectivity all nodes
 	 
 
 7.      Option 7 - Troublehshooting - COllect logs, auto convert to text and save to local share. 
 8.      Option 8 Multi-Menu
 
-	 *1. Recomended - Windows Admin Center Install 
-	 *2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
-	 *3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
-	 *4. Optional setup - Constrained Delegation 
-	 *5. Troubleshooting - SPN CHECK - Not working try running as single lines - future syntax corrections  
+	 1. Recomended - Windows Admin Center Install 
+	 2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
+	 3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
+	 4. Optional setup - Constrained Delegation 
+	 5. Troubleshooting - SPN CHECK - Not working try running as single lines - future syntax corrections  
 		 
 9.     Option 9 Deployment for proxy organizations - required! and Patch and update not supported if you use proxy - use manual Dell DRM download  
 
