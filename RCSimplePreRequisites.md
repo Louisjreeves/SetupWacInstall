@@ -5,15 +5,17 @@ BASE prerequisites OMIMSWAC, WAC, DRM, IDRAC, CAU
 =========================================================================
 
 THis Script running in the download:
- ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
+	 1. SHould run from Downloads folder of the logged on admin
+	 2. Open Powershell as admin 
+	 3. Needs to run on a cluster node unless running option 8 setp 1 installing WAC, then you should not run on a cluster node for this step
+	 4. Run the Powershell command below:
  
- 1. SHould run from Downloads folder of the logged on admin
- 2. Open Powershell as admin 
- 3. Needs to run on a cluster node unless running option 8 setp 1 installing WAC, then you should not run on a cluster node for this step
- 4. Run the Powershell command below:
+ 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandSImplePreRequisites.ps1'));Invoke-RCSimplePreRequsites
 ```
+
+ ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
 ------------------------------------------------------------------------
 
 ## steps to run before Deploying Windows admin center: 
