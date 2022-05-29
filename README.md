@@ -132,4 +132,4 @@ follow steps 1-5 then perform the wac install on option 8 step 1 for deployment.
 	* 	Open PowerShell as administrator and run  .\RcSimplePrerequisites.ps1 , from inside the RCSimplePreRequisites  folder . 
 
 Hit yes every single time an approval pops up, without fail. you may have the same popup, due to multiple nodes being queried!
-![image](https://user-images.githubusercontent.com/79279019/170889998-b0399885-023f-4101-af0f-3ff4409d4f64.png)
+ 
