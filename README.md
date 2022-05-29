@@ -1,13 +1,17 @@
-# SetupWacInstallTool (SWIC)
+# RCSimplePreRequsites (SWIC)
 Helps clean Up WAC and OMIMSWAC for Cluster Management and Patch to succeed
 
-# SetupWacInstall (SWIC)
+# RCSimplePreRequsites (SWIC)
 
 Automation tool for Windows Admin center and Open Manage Integration for Windows Admin Center.
 
- 
+ # # Download and run from powershell as administrator
+If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from then unzipped folder RCSimplePreRequsites, from the downloads folder in your profile. 
+  ```Powershell
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandSImplePreRequisites.ps1'));Invoke-RCSimplePreRequsites
+```  
 
-## SetupWacInstall Pic Example
+## RCSimplePreRequsites Pic Example
  
 ![image](https://user-images.githubusercontent.com/79279019/170877388-574256d1-e50c-4148-acca-c69470fefdf4.png)
 
@@ -53,7 +57,7 @@ g. Hidden option- search for gsespace in script and you can add your own script 
           4. make sure the cluster is also in this OU and has full control over the cluster nodes
           5. reference https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
         
-     b. Create a share - not in the cluster or vms on cluster- all nodes need full control to this folder. 
+     b. Create a share - not in the cluster or vms on cluster- Not on the WAC server. All nodes need full control to this folder. 
      
           1. Main share \\Servername
           2. DEllUpdates - Folder where all the OMIMSWAC files will be located \\Servername\Folder
@@ -82,23 +86,22 @@ g. Hidden option- search for gsespace in script and you can add your own script 
              (ii) Once YOu choose the UPDATE tab, choose manual and DRM radio button for the catalog path (updates path)
              
     
-    Populate share locations in OMIMSWAC
+    		Populate share locations in OMIMSWAC
+		* The shares are covered well in the section below called "Offline Inststuctions for Running Deployment"
+		* The files downloaded are as well
+		
       
-             
-   
-   
-   
-	e. create a folder called Backup - this folder will be used for log collection to a central location (Option #7)
+    e. create a folder called Backup - this folder will be used for log collection to a central location (Option #7)
 
-  \\Servername\DEllUpdates\
+  	\\Servername\DEllUpdates\
   
   Final Directions- This will leave you with a small fist full of folder locations which you need to place in a notepad file on the desktop of you WAC server. 
   This will afford you the ability to recover from a WAC update quickly. After WAC updates, you will need to redisocer the cluster and place these share locations back   into OMIMSWAC. The backup folder is for the use of this tool. 
   
-  \\Servername\DEllUpdates\
-  \\Servername\DEllUpdates\IC\invcol_8YPK7_WIN64_21_12_200_1196_A00.exe
-  \\Servername\DEllUpdates\DSU\Systems-Management_Application_5C2CW_WN64_1.9.2.0_A00.EXE
-  \\Servername\DEllUpdates\updates\hcios21h2_1.00_Catalog.xml
+	  \\Servername\DEllUpdates\
+	  \\Servername\DEllUpdates\IC\invcol_8YPK7_WIN64_21_12_200_1196_A00.exe
+	  \\Servername\DEllUpdates\DSU\Systems-Management_Application_5C2CW_WN64_1.9.2.0_A00.EXE
+	  \\Servername\DEllUpdates\updates\hcios21h2_1.00_Catalog.xml
    
 # # Download and run from powershell as administrator
 If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from then unzipped folder RCSimplePreRequsites, from the downloads folder in your profile. 
