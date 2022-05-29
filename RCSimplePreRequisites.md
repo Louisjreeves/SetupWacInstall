@@ -14,9 +14,24 @@ THis Script running in the download:
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandSImplePreRequisites.ps1'));Invoke-RCSimplePreRequsites
 ```
+=======================================================================
+
+Simple check off list: complete these and the Deployment will be finished:
+
+
+![image](https://user-images.githubusercontent.com/79279019/170883963-39cfc8d8-1e1e-4550-8b20-054054327613.png)
+
+
+
+
+
+
+
+=======================================================================
+
+
 
  ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
-------------------------------------------------------------------------
 
 ## steps to run before Deploying Windows admin center: 
 1.	Option 1 Required -  All prerequsites for the product to work. - Run on one Cluster node and WAC machine
