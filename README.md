@@ -43,15 +43,15 @@ Automation tool for Windows Admin center and Open Manage Integration for Windows
 
 g. Hidden option- search for gsespace in script and you can add your own script and run as option g in the menu. 
 
+## Prerequisites to allow OMIMSWAC to work properly
 
      a. Use cluster manager to deploy CAU. 
      
-          1. Before you do, go to ADUC and create a computer account in the same OU as the cluster nodes
-          2. Once Created go to the OU above and right click ->properties-> security tab-click add -> change object type to computer
-          3. add the Computer name just created. and add the rights to write computer ojects 
-          4. Read/Write computer ojbects, Read/Write child objects, Read and write.
-          5. make sure the cluster is also in this OU and has full control over the cluster nodes
-          6. reference https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
+          1. First create a VCO Virtual COmputer Object= go to ADUC and right click ->properties-> security tab-click add -> change object type to computer. Then                    create a computer account in the same OU as the cluster nodes
+          2. Once Created go to the OU above and add the Computer name just created. and add the rights to write computer ojects 
+          3. Read/Write computer ojbects, Read/Write child objects, Read and write.
+          4. make sure the cluster is also in this OU and has full control over the cluster nodes
+          5. reference https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
         
      b. Create a share - not in the cluster or vms on cluster- all nodes need full control to this folder. 
      
@@ -69,7 +69,7 @@ g. Hidden option- search for gsespace in script and you can add your own script 
      
           1. Deploy Dell Repository manager to this share machine. 
           2. Create a repository for the Cluster server Model number . use these shares for the repository location.
-          3. EXPORT EXPORT EXPORT the repository to this share into an updates folder. this locaton will have 4 total sub folders
+          3. ## EXPORT EXPORT EXPORT # # the repository to this share into an updates folder. this locaton will have 4 total sub folders
           4. DO NOT download the repostiory it does not work wth OMIMSWAC (catalog created on export)
                 (i) path will later be used by OMIMSWAC- Export  to \\Servername\DEllUpdates\updates\hcios21h2_1.00_Catalog.xml
 
