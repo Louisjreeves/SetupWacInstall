@@ -1,14 +1,14 @@
-Simple Offline Release Cantidate (SORC) OMIMSWAC
+Simple Offline Release Candidate (SORC) OMIMSWAC
 
 Open Manage Integration for Windows Admin Center Quick Start Guide. Offline steps
 BASE prerequisites OMIMSWAC, WAC, DRM, IDRAC, CAU
 =========================================================================
 
-THis Script running in the download:
-	 1. SHould run from Downloads folder of the logged on admin
-	 2. Open Powershell as admin 
+This Script running in the download:
+	 1. Should run from Downloads folder of the logged on admin
+	 2. Open PowerShell as admin 
 	 3. Needs to run on a cluster node unless running option 8 setp 1 installing WAC, then you should not run on a cluster node for this step
-	 4. Run the Powershell command below:
+	 4. Run the PowerShell command below:
  
  
 ```Powershell
@@ -34,21 +34,21 @@ Simple check off list: complete these and the Deployment will be finished:
  ![Figure 1. Script folder RCSimplePreRequisites](https://user-images.githubusercontent.com/79279019/169087650-67d497fb-14cb-4c5d-b1dd-833020e2a8f4.png)
 
 ## steps to run before Deploying Windows admin center: 
-1.	Option 1 Required -  All prerequsites for the product to work. - Run on one Cluster node and WAC machine. Drac tools and fixes.
+1.	Option 1 Required -  All prerequisites for the product to work. - Run on one Cluster node and WAC machine. Drac tools and fixes.
 2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server. ISM module and fixes.
 3.	Option 3 Required - Checks Steps one and 2. checks and requirements
 4.	Option 4 Required - Checks USBNIC status and IP connectivity. check connectivity
 5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies ports open.
 6.      Option 6 Multi-Menu 
 
-	 1.  Troubleshooting -Repair CLuster Performance History
+	 1.  Troubleshooting -Repair Cluster Performance History
 	 2.  Troubleshooting -Repair CAU Cluster aware update if CAU VCO virtual computer object is already defined and setup. 
 	 3.  Troubleshooting -remove USB Drac Network from cluster communication
 	 4.  Troubleshooting - Restart all dracs
 	 5.  Troubleshooting - Test and set port 445 and test DC connectivity all nodes
 	 
 
-7.      Option 7 - Troublehshooting - COllect logs, auto convert to text and save to local share. 
+7.      Option 7 - Troubleshooting - Collect logs, auto convert to text and save to local share. 
 8.      Option 8 Multi-Menu
 
 	 1. Recommended - Windows Admin Center Install 
@@ -70,9 +70,9 @@ g.     Hidden option- search for gsespace in script and you can add your own scr
 
      a. Use cluster manager to deploy CAU. 
      
-          1. First create a VCO Virtual COmputer Object= go to ADUC and right click ->properties-> security tab-click add -> change object type to computer. Then                    create a computer account in the same OU as the cluster nodes
-          2. Once Created go to the OU above and add the Computer name just created. and add the rights to write computer ojects 
-          3. Read/Write computer ojbects, Read/Write child objects, Read and write.
+          1. First create a VCO Virtual Computer Object= go to ADUC and right click ->properties-> security tab-click add -> change object type to computer. Then                    create a computer account in the same OU as the cluster nodes
+          2. Once Created go to the OU above and add the Computer name just created. and add the rights to write computer objects 
+          3. Read/Write computer objects, Read/Write child objects, Read and write.
           4. make sure the cluster is also in this OU and has full control over the cluster nodes
           5. reference https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
         
@@ -83,7 +83,7 @@ g.     Hidden option- search for gsespace in script and you can add your own scr
           3. DSU - Dell Server Update EXE- Place in this folder - \\Servername\DEllUpdatesDSU\
                    (i) Download DSU from  https://dl.dell.com/omimswac/ 
                    (ii) path will later be used by OMIMSWAC  \\Servername\DEllUpdates\DSU\Systems-Management_Application_5C2CW_WN64_1.9.2.0_A00.EXE
-          4. IC Inventory COllector. place in the path created -  \\Servername\DEllUpdates\IC\
+          4. IC Inventory Collector. place in the path created -  \\Servername\DEllUpdates\IC\
                    (i) Download from  Download https://dl.dell.com/omimswac/ 
                    (ii) path will later be used by OMIMSWAC  - \\Servername\DEllUpdates\IC\invcol_8YPK7_WIN64_21_12_200_1196_A00.exe
                    
@@ -92,13 +92,13 @@ g.     Hidden option- search for gsespace in script and you can add your own scr
      
           1. Deploy Dell Repository manager to this share machine. 
           2. Create a repository for the Cluster server Model number . use these shares for the repository location.
-          3. ## EXPORT EXPORT EXPORT # # the repository to this share into an updates folder. this locaton will have 4 total sub folders
-          4. DO NOT download (but do export) the repostiory it download does not work wth OMIMSWAC (catalog created on export)
+          3. ## EXPORT EXPORT EXPORT # # the repository to this share into an updates folder. this location will have 4 total sub folders
+          4. DO NOT download (but do export) the repository it download does not work wth OMIMSWAC (catalog created on export)
                 (i) path will later be used by OMIMSWAC- Export  to \\Servername\DEllUpdates\updates\hcios21h2_1.00_Catalog.xml
 
 
              
-     d. Add Paths to OMIMSWAC for Upates to work
+     d. Add Paths to OMIMSWAC for Updates to work
      
           (1) Add IC DSU and Updates catalog location paths to the two locations showing in the SCREEN SHOT BELOW
              (i) The Settings ICON will have the IC and DSU File paths- required to be entered. 
@@ -106,7 +106,7 @@ g.     Hidden option- search for gsespace in script and you can add your own scr
              
     
     		Populate share locations in OMIMSWAC
-		* The shares are covered well in the section below called "Offline Inststuctions for Running Deployment"
+		* The shares are covered well in the section below called "Offline Institutions for Running Deployment"
 		* The files downloaded are as well
 		
       
@@ -151,8 +151,7 @@ Hit yes every single time an approval pops up, without fail. This is your pre-re
 # Note for high security environments. You may have a problem getting started. 
  
 1. This script is designed to help with this difficulty. 
-2. Before running this scipt make sure you can access the C$ share from each node to each node
+2. Before running this script make sure you can access the C$ share from each node to each node
 3. Make sure you can successfully etsn (enter-psSession) to every node from any other node
 4. Login with admin credentials. This tool uses the logged in creds for all actions. 
-5. Make sure to run Powershell as administrator. 
-
+5. Make sure to run PowerShell as administrator. ![image](https://user-images.githubusercontent.com/79279019/170889822-5162c6e0-1f9f-4ba1-8597-3694b7af1209.png)
