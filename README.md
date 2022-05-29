@@ -8,20 +8,40 @@ Automation tool for Windows Admin center and Open Manage Integration for Windows
  
 
 ## SetupWacInstall Pic Example
-![Image](https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/SetupWacInstall.jpg)
+ 
+![image](https://user-images.githubusercontent.com/79279019/170877388-574256d1-e50c-4148-acca-c69470fefdf4.png)
 
+ ![image](https://user-images.githubusercontent.com/79279019/170877400-53af8e8f-169b-41a3-b0c1-8a7cdca1e609.png)
  
+ ![image](https://user-images.githubusercontent.com/79279019/170877414-188aa1a9-80cf-404c-82bd-19f5758c23cb.png)
+
+
 ## Deployment steps- Deploy assist tool
- Use step five above to begin the setupwacinstall script- choose 1 to download. 
- if your offline, copy the the server, unzip and run .\setupwacinstall.  
+ Use step eight, option 1 to begin the setupwacinstall script- option 81 will download online. 
+ if your offline, you can still use tool for ISM module and Drac tools deploy. copy renamed files for Isminstall.exe and racadmininstall.exe to C:\Users\$Env:Username\Downloads\RCSimplePreRequsites 
  
-0.	Option 0- Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
-1.	Option 1 Required - Clears files and old installs. Run on one node and on the WAC server.
+1.	Option 1 Required -  All prerequsites for the product to work. - Run on one Cluster node and WAC machine
 2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
-3.	Option 3 Required - Checks many failure points. run on each node- or on suspect nodes only
-4.	Option 4 Required - Install WAC on Wac server. Do not run on Cluster node
-     a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
-5. Final Steps for setup
+3.	Option 3 Required - Checks Steps one and 2.
+4.	Option 4 Required - Checks USBNIC status and IP connectivity
+5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies.
+6.      Option 6 Multi-Menu 
+	 *1.  Troubleshooting -Repair CLuster Performance History
+	 *2.  Troubleshooting -Repair CAU Cluster aware update if CAU VCO virtual computer object is already defined and setup. 
+	 *3.  Troubleshooting -remove USB Drac Network from cluster communication
+	 *4.  Troubleshooting - Restart all dracs
+	 *5.  Troubleshooting - Test and set port 445 and test DC connectivity all nodes
+7.      Option 7 - Troublehshooting - COllect logs, auto convert to text and save to local share. 
+8.      Option 8 Multi-Menu
+         *1. Recomended - Windows Admin Center Install 
+	 *2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
+	 *3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
+	 *4. Optional setup - Constrained Delegation 
+	 *5. Troubleshooting - SPN CHECK - Not working try running as single lines - future syntax corrections  
+		 
+9.     Option 9 Deployment for proxy organizations - required! and Patch and update not supported if you use proxy - use manual Dell DRM download  
+
+g. Hidden option- search for gsespace in script and you can add your own script and run as option g in the menu. 
 
 
      a. Use cluster manager to deploy CAU. 
