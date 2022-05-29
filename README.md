@@ -30,14 +30,18 @@ If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from the
 4.	Option 4 Required - Checks USBNIC status and IP connectivity
 5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies.
 6.      Option 6 Multi-Menu 
+
 	 *1.  Troubleshooting -Repair CLuster Performance History
 	 *2.  Troubleshooting -Repair CAU Cluster aware update if CAU VCO virtual computer object is already defined and setup. 
 	 *3.  Troubleshooting -remove USB Drac Network from cluster communication
 	 *4.  Troubleshooting - Restart all dracs
 	 *5.  Troubleshooting - Test and set port 445 and test DC connectivity all nodes
+	 
+
 7.      Option 7 - Troublehshooting - COllect logs, auto convert to text and save to local share. 
 8.      Option 8 Multi-Menu
-         *1. Recomended - Windows Admin Center Install 
+
+	 *1. Recomended - Windows Admin Center Install 
 	 *2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
 	 *3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
 	 *4. Optional setup - Constrained Delegation 
@@ -45,8 +49,9 @@ If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from the
 		 
 9.     Option 9 Deployment for proxy organizations - required! and Patch and update not supported if you use proxy - use manual Dell DRM download  
 
-g. Hidden option- search for gsespace in script and you can add your own script and run as option g in the menu. 
+g.     Hidden option- search for gsespace in script and you can add your own script and run as option g in the menu. 
 
+============================================================================================================================================
 ## Prerequisites to allow OMIMSWAC to work properly
 
      a. Use cluster manager to deploy CAU. 
