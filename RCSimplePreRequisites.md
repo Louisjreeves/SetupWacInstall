@@ -19,7 +19,7 @@ This Script running in the download:
 Simple check off list: complete these and the Deployment will be finished:
 
 
-![image](https://user-images.githubusercontent.com/79279019/170913827-b1fb79e4-96ad-4dd0-a62d-431f5d2b0f9e.png)
+![image](https://user-images.githubusercontent.com/79279019/170914104-6e1a1861-f0b6-4532-97d0-a923d596d7ff.png)
 
 
 
