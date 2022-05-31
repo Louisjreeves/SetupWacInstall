@@ -155,4 +155,4 @@ Hit yes every single time an approval pops up, without fail. This is your pre-re
 2. Before running this script make sure you can access the C$ share from each node to each node
 3. Make sure you can successfully etsn (enter-psSession) to every node from any other node
 4. Login with admin credentials. This tool uses the logged in creds for all actions. 
-5. Make sure to run PowerShell as administrator. ![image](https://user-images.githubusercontent.com/79279019/170889822-5162c6e0-1f9f-4ba1-8597-3694b7af1209.png)
+5. Make sure to run PowerShell as administrator. 
