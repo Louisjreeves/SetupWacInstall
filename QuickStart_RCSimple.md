@@ -6,7 +6,7 @@ Full Deployment Setup and Configuration for OMIMSWAC, WAC, DRM, IDRAC, CAU
 
 ------------------------------------------------------------------------
 
-![image](https://user-images.githubusercontent.com/79279019/168081256-c1eeb5f8-8cdd-4b99-9ceb-a80ffa4a3ce0.png)
+![image](https://user-images.githubusercontent.com/79279019/170914104-6e1a1861-f0b6-4532-97d0-a923d596d7ff.png)
 
 
 -------------------------------------------------------------------
@@ -23,7 +23,6 @@ Estimated time :
 
 ## SetupWacInstall Pic Example
  
-![image](https://user-images.githubusercontent.com/79279019/170914104-6e1a1861-f0b6-4532-97d0-a923d596d7ff.png)
 
 ![image](https://user-images.githubusercontent.com/79279019/171219529-1a20a0e6-e73a-4d50-9ff0-b1c102749a35.png)
 
