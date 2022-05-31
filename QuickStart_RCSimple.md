@@ -25,7 +25,8 @@ Estimated time :
 ## SetupWacInstall Pic Example
  ![image](https://user-images.githubusercontent.com/79279019/171220522-2ca3058e-8e71-4661-acd3-1f6b82d22a0b.png)
 
- ![image](https://user-images.githubusercontent.com/79279019/171221332-55ac48c1-008a-451e-abc0-886b1473428a.png)
+ ![image](https://user-images.githubusercontent.com/79279019/171221698-5c4b25fb-7029-43de-969a-1a13d5666f31.png)
+
 
 
 
