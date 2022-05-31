@@ -8,9 +8,14 @@ Simple check off list: complete these and the Deployment will be finished:
 =======================================================================
 
 ![image](https://user-images.githubusercontent.com/79279019/170914104-6e1a1861-f0b6-4532-97d0-a923d596d7ff.png)
- ![image](https://user-images.githubusercontent.com/79279019/171221698-5c4b25fb-7029-43de-969a-1a13d5666f31.png)
+
 
 =======================================================================
+# # Menu Screens
+![image](https://user-images.githubusercontent.com/79279019/171222498-932ea675-5955-4ec5-ba47-8bbeafe047a3.png)
+
+
+ ![image](https://user-images.githubusercontent.com/79279019/171221698-5c4b25fb-7029-43de-969a-1a13d5666f31.png)
 
  # # Download and run from powershell as administrator
 If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from then unzipped folder RCSimplePreRequsites, from the downloads folder in your profile. 
