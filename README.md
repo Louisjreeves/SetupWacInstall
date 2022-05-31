@@ -7,7 +7,8 @@ Automation tool for Windows Admin center and Open Manage Integration for Windows
 Simple check off list: complete these and the Deployment will be finished:
 =======================================================================
 
-![image](https://user-images.githubusercontent.com/79279019/170914104-6e1a1861-f0b6-4532-97d0-a923d596d7ff.png)
+![image](https://user-images.githubusercontent.com/79279019/171279092-0a3fc550-9e67-4ffb-95f1-b6e70e5f54c1.png)
+
 
 
 =======================================================================
