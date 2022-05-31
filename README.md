@@ -4,6 +4,12 @@ Helps clean Up WAC and OMIMSWAC for Cluster Management and Patch to succeed
 # RCSimplePreRequsites (SWIC)
 
 Automation tool for Windows Admin center and Open Manage Integration for Windows Admin Center.
+Simple check off list: complete these and the Deployment will be finished:
+=======================================================================
+
+![image](https://user-images.githubusercontent.com/79279019/170914104-6e1a1861-f0b6-4532-97d0-a923d596d7ff.png)
+
+=======================================================================
 
  # # Download and run from powershell as administrator
 If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from then unzipped folder RCSimplePreRequsites, from the downloads folder in your profile. 
