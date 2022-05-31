@@ -8,6 +8,8 @@ Simple check off list: complete these and the Deployment will be finished:
 =======================================================================
 
 ![image](https://user-images.githubusercontent.com/79279019/170914104-6e1a1861-f0b6-4532-97d0-a923d596d7ff.png)
+![image](https://user-images.githubusercontent.com/79279019/171219529-1a20a0e6-e73a-4d50-9ff0-b1c102749a35.png)
+
 
 =======================================================================
 
@@ -19,11 +21,7 @@ If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from the
 
 ## RCSimplePreRequsites Pic Example
  
-![image](https://user-images.githubusercontent.com/79279019/170877388-574256d1-e50c-4148-acca-c69470fefdf4.png)
-
- ![image](https://user-images.githubusercontent.com/79279019/170877400-53af8e8f-169b-41a3-b0c1-8a7cdca1e609.png)
- 
- ![image](https://user-images.githubusercontent.com/79279019/170877414-188aa1a9-80cf-404c-82bd-19f5758c23cb.png)
+ ![image](https://user-images.githubusercontent.com/79279019/171219454-91acb77b-87b1-4566-ba6d-eb8b453ba69b.png)
 
 
 ## Deployment steps- Deploy assist tool
