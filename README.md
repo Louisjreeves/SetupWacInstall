@@ -37,7 +37,7 @@ If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from the
 2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
 3.	Option 3 Required - Checks Steps one and 2.
 4.	Option 4 Required - Checks USBNIC status and IP connectivity
-5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies.
+5.      Option 5 multi menu - install wac, fix firewall, port  checks, .
 6.      Option 6 Multi-Menu 
 
 	 *1.  Troubleshooting -Repair Cluster Performance History
@@ -50,7 +50,7 @@ If anything goes wrong just make sure the RCSimplePreRequsites.ps1 runs from the
 7.      Option 7 - Troubleshooting - Collect logs, auto convert to text and save to local share. 
 8.      Option 8 Multi-Menu
 
-	 *1. Recommended - Windows Admin Center Install 
+	 *1. gsespace - furture use function gsespace. hidden menu selection g.
 	 *2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
 	 *3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
 	 *4. Optional setup - Constrained Delegation 
