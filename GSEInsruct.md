@@ -33,14 +33,15 @@ DOnt worry about dates or anything else. Next next finished! Just make sure you 
 ![image](https://user-images.githubusercontent.com/79279019/171457210-cf6a4195-1343-45f4-9996-b7596b6c321e.png)
 
 
-# #7 On WAC machine perform  Options 1 and 5 (install wac)
+# #7 On WAC machine perform  Options 1 (above menu) and 5 (below menu) (install wac)
 ![image](https://user-images.githubusercontent.com/79279019/171457357-5ca6c00e-f690-4177-8fd8-2972b26b1df5.png)
 
 
-# #8  do other option in option 5 menu on one cluster node  - like disable cluster communications for USBNIC network. 
+# #8  do other options in menu 5 - on one cluster node  - like disable cluster communications for USBNIC network. 
 ![image](https://user-images.githubusercontent.com/79279019/171457400-03b11ece-fa3c-455a-a87d-d4a07a7175da.png)
 
-# #9. Run the Proxy setup with 159.254 exceptions if your in a proxy! Or Inventory won't work. 
+# #9. Run menu #9 Proxy setup with 159.254 exceptions if your in a proxy! Or Inventory won't work. - if proxy Updates only work
+with Ofline repository!!!! - ONLINE Updates WONT WORK with Proxy exceptions. Discovery wont work without Proxy exceptions!!!!!!
 ![image](https://user-images.githubusercontent.com/79279019/171457474-5d99df1a-3d5e-470e-af3c-4a1a44828318.png)
 
 # #10 Guide for HCP - Policy Reference Guide—Network Integration and Host Network Configuration Options | Dell Technologies Info Hub
