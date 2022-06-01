@@ -1,0 +1,30 @@
+#1 Export repository - for index catalog- Azure HCI
+
+ https://www.youtube.com/watch?v=KIfyntBUL38
+
+
+#2 Setup a Virtual computer object in  AD- I used Add and delete child items - for permissions 
+
+https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
+
+#3. Use cluster manager - CAU Gui to enable CAU role with the Pre-created VCO
+
+#4 Remove WAC 
+
+#5  Idrac settings connectivity and service - Enable redfish and set IP unique for each node, but only in 4th octet!
+
+
+
+#6 - # # On One Node of the cluster perform script options  1-5
+
+#7 On WAC machine perform  Options 1 and 5 (install wac)
+
+#8  do other option in option 5 menu on one cluster node  - like disable cluster communications for USBNIC network. 
+
+#9. Run the Proxy setup with 159.254 exceptions if your in a proxy! Or Inventory won't work. 
+
+#8 Guide for HCP - Policy Reference Guide—Network Integration and Host Network Configuration Options | Dell Technologies Info Hub
+
+
+
+![image](https://user-images.githubusercontent.com/79279019/171454128-2fbe139c-0580-4fa6-9ca0-5ba41552eac4.png)
