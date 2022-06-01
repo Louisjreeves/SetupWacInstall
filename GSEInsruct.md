@@ -13,6 +13,7 @@ https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-clu
 
 #5  Idrac settings connectivity and service - Enable redfish and set IP unique for each node, but only in 4th octet!
 
+![image](https://user-images.githubusercontent.com/79279019/171454618-45a73743-6c74-4fb9-ab52-193ecbe37f5b.png)
 
 
 #6 - # # On One Node of the cluster perform script options  1-5
@@ -27,4 +28,4 @@ https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-clu
 
 
 
-![image](https://user-images.githubusercontent.com/79279019/171454128-2fbe139c-0580-4fa6-9ca0-5ba41552eac4.png)
+ 
