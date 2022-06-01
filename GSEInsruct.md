@@ -1,3 +1,10 @@
+Automation script for deployment and troubleshooting OMIMSWAC
+
+## GSE send List of items for cusotmer to complete - 
+
+
+
+
 # # 1 Export repository - for index catalog- Azure HCI
 
  https://www.youtube.com/watch?v=KIfyntBUL38
@@ -28,7 +35,7 @@ DOnt worry about dates or anything else. Next next finished! Just make sure you 
 
 ![image](https://user-images.githubusercontent.com/79279019/171454618-45a73743-6c74-4fb9-ab52-193ecbe37f5b.png)
 
-
+############ Cusotmer completed 1-5 above ################## GSE or support complete 6-9 below#############################
 # #6 - # # On One Node of the cluster perform script options  1-5
 ![image](https://user-images.githubusercontent.com/79279019/171457210-cf6a4195-1343-45f4-9996-b7596b6c321e.png)
 
@@ -47,5 +54,16 @@ with Ofline repository!!!! - ONLINE Updates WONT WORK with Proxy exceptions. Dis
 # #10 Guide for HCP - Policy Reference Guide—Network Integration and Host Network Configuration Options | Dell Technologies Info Hub
 
 https://infohub.delltechnologies.com/t/reference-guide-network-integration-and-host-network-configuration-options-1/
+
+# # GSE check list 
+
+Simple check off list: complete these and the Deployment will be finished:
+=======================================================================
+
+![image](https://user-images.githubusercontent.com/79279019/171279092-0a3fc550-9e67-4ffb-95f1-b6e70e5f54c1.png)
+
+=======================================================================
+
+
 
  
