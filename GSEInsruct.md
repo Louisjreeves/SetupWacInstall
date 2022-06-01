@@ -74,9 +74,10 @@ DOnt worry about dates or anything else. Next next finished! Just make sure you 
 ![image](https://user-images.githubusercontent.com/79279019/171457210-cf6a4195-1343-45f4-9996-b7596b6c321e.png)
 
 
-# #7 On WAC machine perform  Options 1 (above menu) and 5 (below menu) (install wac)
+# #7 On WAC machine perform  Options 1 (above menu) and option item 1 (below menu) from menu item 5 (above menu) (install wac)
 ![image](https://user-images.githubusercontent.com/79279019/171457357-5ca6c00e-f690-4177-8fd8-2972b26b1df5.png)
 
+wait 5 min after and then move to disable cluster communicaitons #8 below 
 
 # #8  do other options in menu 5 - on one cluster node  - like disable cluster communications for USBNIC network. 
 ![image](https://user-images.githubusercontent.com/79279019/171457400-03b11ece-fa3c-455a-a87d-d4a07a7175da.png)
