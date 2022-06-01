@@ -38,7 +38,7 @@ Simple check off list: complete these and the Deployment will be finished:
 2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server. ISM module and fixes.
 3.	Option 3 Required - Checks Steps one and 2. checks and requirements
 4.	Option 4 Required - Checks USBNIC status and IP connectivity. check connectivity
-5.      Option 5 Optional - Checks port 445 and 5985 connectivity and verifies ports open.
+5.      Option 5 multi-menu - Install WAC, port fixes, firewall, and other fixes. 
 6.      Option 6 Multi-Menu 
 
 	 1.  Troubleshooting -Repair Cluster Performance History
@@ -51,11 +51,11 @@ Simple check off list: complete these and the Deployment will be finished:
 7.      Option 7 - Troubleshooting - Collect logs, auto convert to text and save to local share. 
 8.      Option 8 Multi-Menu
 
-	 1. Recommended - Windows Admin Center Install 
+	 1. Recommended - gsespace, extra function future use
 	 2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
 	 3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
 	 4. Optional setup - Constrained Delegation 
-	 5. Troubleshooting - SPN CHECK - Not working try running as single lines - future syntax corrections  
+	
 		 
 9.     Option 9 Deployment for proxy organizations - required! and Patch and update not supported if you use proxy - use manual Dell DRM download  
 
