@@ -1,6 +1,12 @@
 # # 1 Export repository - for index catalog- Azure HCI
 
  https://www.youtube.com/watch?v=KIfyntBUL38
+ 
+ Very important to choose these options for S2d catalog. For AX 650 choose R640, for AX 700 chooe R700 etc...
+ 
+ ![image](https://user-images.githubusercontent.com/79279019/171456049-0aa28fa0-0a8b-4b86-86c4-74b5929200ef.png)
+
+![image](https://user-images.githubusercontent.com/79279019/171456094-0d4277b5-03fd-4443-bbd8-e51a50e7e7b7.png)
 
 
 # # 2 Setup a Virtual computer object in  AD- I used Add and delete child items - for permissions 
