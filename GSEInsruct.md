@@ -15,10 +15,37 @@ Automation script for deployment and troubleshooting OMIMSWAC
 
 ![image](https://user-images.githubusercontent.com/79279019/171456094-0d4277b5-03fd-4443-bbd8-e51a50e7e7b7.png)
 
+create the share sturucture around the updates folder location : 
+
+      1. Main share \\Servername\Dellupdates
+          2. DEllUpdates - Folder where all the OMIMSWAC files will be located \\Servername\Folder
+          3. DSU - Dell Server Update EXE- Place in this folder - \\Servername\DEllUpdates\DSU
+                   (i) Download DSU from  https://dl.dell.com/omimswac/ 
+                   (ii) path will later be used by OMIMSWAC  \\Servername\DEllUpdates\DSU\Systems-Management_Application_5C2CW_WN64_1.9.2.0_A00.EXE
+          4. IC Inventory COllector. place in the path created -  \\Servername\DEllUpdates\IC\
+                   (i) Download from  Download https://dl.dell.com/omimswac/ 
+                   (ii) path will later be used by OMIMSWAC  - \\Servername\DEllUpdates\IC\invcol_8YPK7_WIN64_21_12_200_1196_A00.exe
+                   
+Export Dell repository manager updates into the updates folder in this path: 
+
+      1. Deploy Dell Repository manager to this share machine. 
+          2. Create a repository for the Cluster server Model (IE ax640). Use these shares for the repository location.
+          3. EXPORT EXPORT EXPORT the repository to this share into an updates folder. this locaton will have 4 total sub folders
+          4. DO NOT download the repostiory it does not work wth OMIMSWAC (catalog created on export)
+                (i) path will later be used by OMIMSWAC- Export  to \\Servername\DEllUpdates\updates\hcios21h2_1.00_Catalog.xml
+
+SAVE ALL THESE PATHS TO THE DESKTOP OF THE WAC SERVER, FOR INPUT INTO OMIMSWAC!
 
 # # 2 Setup a Virtual computer object in  AD- I used Add and delete child items - for permissions 
 
 https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
+
+  1. Before you do, go to ADUC and create a computer account in the same OU as the cluster nodes
+          2. Once Created go to the OU above and right click ->properties-> security tab-click add -> change object type to computer
+          3. add the Computer name just created. and add the rights to write computer ojects 
+          4. Read/Write computer ojbects, Read/Write child objects, Read and write.
+          5. make sure the cluster is also in this OU and has full control over the cluster nodes
+          6. reference https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
 
 # #3. Use cluster manager - CAU Gui to enable CAU role with the Pre-created VCO
 
@@ -27,7 +54,7 @@ DOnt worry about dates or anything else. Next next finished! Just make sure you 
 ![image](https://user-images.githubusercontent.com/79279019/171456546-4845bbe3-c912-4dca-87d9-d30087481b16.png)
 
 
-# #4 Remove WAC and Dell EMC system Update if your first install failed. from all noded for Dell EMC systemUpdate. 
+# #4 Remove WAC and Dell EMC system Update if your first install failed. from all nodes remove Dell EMC systemUpdate. 
 ![image](https://user-images.githubusercontent.com/79279019/171456890-e6df5998-dd78-4a7a-b57c-427b4de4a41b.png)
 
 
@@ -36,6 +63,8 @@ DOnt worry about dates or anything else. Next next finished! Just make sure you 
 ![image](https://user-images.githubusercontent.com/79279019/171454618-45a73743-6c74-4fb9-ab52-193ecbe37f5b.png)
 
 ############ Cusotmer completed 1-5 above ################## GSE or support complete 6-9 below#############################
+
+
 # #6 - # # On One Node of the cluster perform script options  1-5
 ![image](https://user-images.githubusercontent.com/79279019/171457210-cf6a4195-1343-45f4-9996-b7596b6c321e.png)
 
@@ -60,10 +89,33 @@ https://infohub.delltechnologies.com/t/reference-guide-network-integration-and-h
 Simple check off list: complete these and the Deployment will be finished:
 =======================================================================
 
-![image](https://user-images.githubusercontent.com/79279019/171279092-0a3fc550-9e67-4ffb-95f1-b6e70e5f54c1.png)
+![image](https://user-images.githubusercontent.com/79279019/171467173-67f0d39a-b1f3-4a0c-8db3-2fdfe967c62f.png)
 
 =======================================================================
 
+ ONCE WAC is installed, add the paths on the desktop into OMIMSWAC: 
+ 
+    (1) Add IC DSU and Updates catalog location paths to the two locations showing in the SCREEN SHOT BELOW
+             (i) The Settings ICON will have the IC and DSU File paths- required to be entered. 
+             (ii) Once YOu choose the UPDATE tab, choose manual and DRM radio button for the catalog path (updates path)
+    
 
+             
+     
+      
+             
+   
+   
+   
+	e. Backup - this folder will be used for log collection to a central location (Option #8)
+ 
+ 
+ 
+  
+      
+ ![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true) 
 
+          
+  This completes your Deployment. Enjoy you years of Updates and Patching to work !!! 
+  
  
