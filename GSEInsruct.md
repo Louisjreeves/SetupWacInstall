@@ -48,7 +48,7 @@ https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-clu
           6. reference https://docs.microsoft.com/en-us/windows-server/failover-clustering/prestage-cluster-adds
 
 # #3. Use cluster manager - CAU Gui to enable CAU role with the Pre-created VCO
-
+video example - use pre-created name and perform this- https://youtu.be/pT0gK7KwYSs
 DOnt worry about dates or anything else. Next next finished! Just make sure you put in the CVO! VCO! 
 
 ![image](https://user-images.githubusercontent.com/79279019/171456546-4845bbe3-c912-4dca-87d9-d30087481b16.png)
