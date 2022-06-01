@@ -1,7 +1,12 @@
 Automation script for deployment and troubleshooting OMIMSWAC
 
-## GSE send List of items for cusotmer to complete - 
+## GSE send List of items for cusotmer to complete - Items 1-5
 
+## Support assist with steps 6 7 and 8 below, using this script: 
+
+```Powershell
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandSImplePreRequisites.ps1'));Invoke-RCSimplePreRequsites
+```
 
 
 
@@ -99,23 +104,18 @@ Simple check off list: complete these and the Deployment will be finished:
              (i) The Settings ICON will have the IC and DSU File paths- required to be entered. 
              (ii) Once YOu choose the UPDATE tab, choose manual and DRM radio button for the catalog path (updates path)
     
-
+     
+ ![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true) 
+      
              
+   ===============================================================================================
+   
+   # # Log collection- #7  uses a share to collect logs from all nodes - and converts files to txt: 
      
       
-             
-   
-   
-   
-	e. Backup - this folder will be used for log collection to a central location (Option #8)
- 
- 
- 
-  
-      
- ![Image](https://github.com/Louisjreeves/SetupWacInstall/blob/main/OMIMSWAC.jpg?raw=true) 
+
 
           
   This completes your Deployment. Enjoy you years of Updates and Patching to work !!! 
   
- 
+ e. Backup - this folder will be used for log collection to a central location (Option #8)
