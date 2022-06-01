@@ -35,7 +35,7 @@ Initial steps
 2.	Set the redfish Ip on each drac to a unique value- to other dracs (only the last octet- IP must be 169.254.1.x)
 3.	Make sure the drac sessions tab sessions is not full of sessions. if clear out- if not clear out
 4.	Make sure the drac users tab has free spaces
-5.	Download the SetupWacInstall from Github using the link below. For HCIOS, choose option 15 and paste in this link
+5.	Download the RCSimplePreRequisites from Github using the link below. For HCIOS, choose option 15 and paste in this link
 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Invoke-Expression('$module="setupWacInstall";$repo="PowershellScripts"'+(new-object System.net.webclient).DownloadString('https://raw.githubusercontent.com/Louisjreeves/SetupWacInstall/main/ExpandSImplePreRequisites.ps1'));Invoke-RCSimplePreRequsites
@@ -46,15 +46,40 @@ Initial steps
  
 ## Deployment steps- Deploy assist tool
  Use step five above to begin the setupwacinstall script- choose 1 to download. 
- if your offline, copy the the server, unzip and run .\setupwacinstall.  
+ if your offline, copy the the server, unzip and run .\RCSimplePreRequisites.ps1 
  
-0.	Option 0- Required - All prerequsites for the product to work. - Run on one Cluster node and WAC machine
-1.	Option 1 Required - Clears files and old installs. Run on one node and on the WAC server.
-2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server.
-3.	Option 3 Required - Checks many failure points. run on each node- or on suspect nodes only
-4.	Option 4 Required - Install WAC on Wac server. Do not run on Cluster node
-     a.	Install OMIMSWAC extension using gear tab (you will need to install manually using gear icon, choose extensions)
-5. Final Steps for setup
+## steps to run before Deploying Windows admin center: 
+1.	Option 1 Required -  All prerequisites for the product to work. - Run on one Cluster node and WAC machine. Drac tools and fixes.
+2.	Option 2 Required - Install ISM module. Run on one node and all nodes are addressed. Run on one node and on the WAC server. ISM module and fixes.
+3.	Option 3 Required - Checks Steps one and 2. checks and requirements
+4.	Option 4 Required - Checks USBNIC status and IP connectivity. check connectivity
+5.      Option 5 multi-menu - Install WAC, port fixes, firewall, and other fixes. 
+6.      Option 6 Multi-Menu 
+
+	 1.  Troubleshooting -Repair Cluster Performance History
+	 2.  Troubleshooting -Repair CAU Cluster aware update if CAU VCO virtual computer object is already defined and setup. 
+	 3.  Troubleshooting -remove USB Drac Network from cluster communication
+	 4.  Troubleshooting - Restart all dracs
+	 5.  Troubleshooting - Test and set port 445 and test DC connectivity all nodes
+	 
+
+7.      Option 7 - Troubleshooting - Collect logs, auto convert to text and save to local share. 
+8.      Option 8 Multi-Menu
+
+	 1. Recommended - gsespace, extra function future use
+	 2. Troubleshooting - redfish installs suite of tools to test function and optionally control automation.
+	 3. Troubleshooting - Repair Remove USBNIC to allow for rediscovery
+	 4. Optional setup - Constrained Delegation 
+	
+		 
+9.     Option 9 Deployment for proxy organizations - required! and Patch and update not supported if you use proxy - use manual Dell DRM download  
+
+g.     Hidden option- search for gsespace in script and you can add your own script lines and run as hidden option g in the menu. 
+
+
+These are REQUIRED SETUP after prduct deployment
+=======================================================================================================================================
+I. Final Steps for setup
 
 
      a. Use cluster manager to deploy CAU. 
@@ -120,11 +145,11 @@ Initial steps
 
 * Option 8 - Use this to collect logs to send to support 
 * Option 9  Constrained Delegation adds trust for the nodes and the WAC server for each other - only for Kerberos. This may be required or desirable. 
-* Option 6 - Redfish test setup
+* Option 8 - section 2 Redfish test setup
      *(a) Use this if the product is not working. This will let you know the redfish is not working
      *(b) If this is the case. Use option 5. Do this on a per Node basis. This will clear the USB NIC for reuse. No changes required. 
-* Option 5 - Clears the USB NIC so OMIMSWAC will recreate the needed Network Components to function- this is automated by OMIMSWAC. 
-* Option 7 - Will recreate the CAU role, but the assumption is the CVO is already created and works. DO step 5A first. 
+* Option 8 - Section 3. Clears the USB NIC so OMIMSWAC will recreate the needed Network Components to function- this is automated by OMIMSWAC. 
+* Option 6 - Section 2 Will recreate the CAU role, but the assumption is the CVO is already created and works. DO step 5A first. 
 
 # Additional Troubleshooting if Updates Fail 
 
